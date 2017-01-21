@@ -1,0 +1,86 @@
+p {
+
+	border-bottom: 2px solid red;
+}
+
+.kermit {
+	border: 3px solid green;
+}
+
+#main-div-1 {
+	padding: 10px;
+}
+
+#main-div-2 .kermit {
+	border: 3px dotted purple;
+}
+
+#main-div-2 > * {
+	border: 3px solid black;
+}
+
+h2 ~ p {
+	border: 3px solid blue;
+}
+
+#li-1 {
+	font-size: 30px;
+}
+
+#li-2 {
+		font-weight: bold;
+}
+
+#li-3 {
+	text-transform: uppercase;
+}
+
+#mystery-ul {
+	font-family: 'Mystery Quest';
+}
+
+#flex-kermit {
+	display: flex-wrap;
+	flex-direction: row;
+}
+
+#flex-kermit img {
+	max-width: 30%;
+}
+
+input:focus {
+	background-color: yellow;
+}
+
+/*nth-child*/
+.sub-div li:nth-child(2n+1) {
+	border: pink 5px solid;
+}
+
+.sub-div li:nth-child(2n) {
+	border: blue 5px solid;
+}
+
+.sub-div li:nth-of-type(2n) {
+	color: blue;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+
+section p:nth-of-type(2) {
+	color: blue;
+}
+
+/*before*/
+#main-div-1::before {
+	content: '\201C';
+	font-size: 60px;
+	font-weight: bold;
+	color: purple;
+}
+
+#main-div-1::after {
+	content: "$$$$$$$$$$$"
+}
